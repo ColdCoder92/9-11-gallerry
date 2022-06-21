@@ -1,0 +1,16 @@
+header {
+    width: 100%;
+}
+#star {
+    width: 5%;
+}
+#welcome {
+    width: 50%;
+    margin: 1em 0em;
+}
+#content {
+    margin: 1em 0em;
+}
+.logo {
+    margin: 0em 0.5em;
+}
