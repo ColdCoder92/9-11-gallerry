@@ -1,16 +1,88 @@
 header {
     width: 100%;
 }
+section, #content{
+    margin: 1em 0em;
+}
 #star {
     width: 5%;
 }
-#welcome {
-    width: 50%;
-    margin: 1em 0em;
+.arrows {
+    position: relative;
+    z-index: 2;
 }
-#content {
-    margin: 1em 0em;
+#leftArrow {
+    right: 5em;
+}
+#rightArrow {
+    left: 5em;
+}
+.welcome {
+    z-index: 1;
+    width: 20%;
+    margin: 1em 3em;
+    position: relative;
+}
+#main {
+    width: 17.75%;
+    animation: forward 1s ease infinite;
+    animation-play-state: paused;
+}
+#offset {
+    animation: forwardAppear 1s ease infinite;
+    animation-play-state: paused;
+}
+
+@keyframes forward {
+    from {
+        opacity: 1;
+        left: -12.5em;
+    }
+    to {
+        opacity: 0;
+        left: 0em;
+    }
+}
+@keyframes back {
+    from {
+        opacity: 1;
+        right: 12.5em;
+    }
+    to {
+        opacity: 0;
+        right: 15em;
+    }
+}
+@keyframes backwardAppear {
+    from {
+        opacity: 0;
+        right: 12.5em;
+    }
+    to {
+        opacity: 1;
+        right: -12.5em;
+    }
+}
+@keyframes forwardAppear {
+    from {
+        opacity: 0;
+        left: -12.5em;
+    }
+    to {
+        opacity: 1;
+        left: 12.5em;
+    }
 }
 .logo {
-    margin: 0em 0.5em;
+    margin: 0.25em 0.5em;
+}
+.photo {
+    width: 33%;
+    border-radius: 25%;
+}
+label {
+    margin-right: 1em;
+}
+#date {
+    margin-bottom: 1em;
 }
