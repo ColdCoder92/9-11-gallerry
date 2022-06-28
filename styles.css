@@ -86,3 +86,7 @@ label {
 #date {
     margin-bottom: 1em;
 }
+.ticket {
+    text-align: center;
+    margin: 1em 0em;
+}
