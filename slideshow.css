@@ -1,0 +1,312 @@
+/*Main Layout */
+.arrows {
+    position: relative;
+    z-index: 2;
+}
+.welcome {
+    z-index: 1;
+    width: 40%;
+    margin: 1em 3em;
+    position: relative;
+}
+#main {
+    animation: forward 1s alternate infinite;
+    animation-play-state: paused;
+}
+#offset {
+    animation: forwardAppear 1s alternate infinite;
+    animation-play-state: paused;
+    width: 45%;
+}
+/*Animations & Responsive Layouts*/
+@media screen and (max-width: 320px) {
+    welcome {
+        margin: 0.5em;
+    }
+    #leftArrow, #rightArrow {
+        left: 3em;
+    }
+    @keyframes forward {
+        from {
+            opacity: 1;
+            left: -5em;
+        }
+        to {
+            opacity: 0;
+            left: 0em;
+        }
+    }
+    @keyframes back {
+        from {
+            opacity: 1;
+            right: 1em;
+        }
+        to {
+            opacity: 0;
+            right: 3em;
+        }
+    }
+    @keyframes backwardAppear {
+        from {
+            opacity: 0;
+            right: 1em;
+        }
+        to {
+            opacity: 1;
+            right: -4.5em;
+        }
+    }
+    @keyframes forwardAppear {
+        from {
+            opacity: 0;
+            left: -1em;
+        }
+        to {
+            opacity: 1;
+            left: 4.5em;
+        }
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 376px) {
+    #leftArrow {
+        left: 4em;
+    }
+     #rightArrow {
+        left: 3em;
+    }
+    @keyframes forward {
+        from {
+            opacity: 1;
+            right: 6em;
+        }
+        to {
+            opacity: 0;
+            right: 0em;
+        }
+    }
+    @keyframes back {
+        from {
+            opacity: 1;
+            right: 1em;
+        }
+        to {
+            opacity: 0;
+            right: 5em;
+        }
+    }
+    @keyframes backwardAppear {
+        from {
+            opacity: 0;
+            right: 1em;
+        }
+        to {
+            opacity: 1;
+            right: -5.5em;
+        }
+    }
+    @keyframes forwardAppear {
+        from {
+            opacity: 0;
+            left: -1em;
+        }
+        to {
+            opacity: 1;
+            left: 6em;
+        }
+    }
+}
+@media screen and (min-width: 376px) and (max-width: 426px) {
+    welcome {
+        margin: 0.5em;
+    }
+    #leftArrow {
+        left: 6em;
+    }
+    #rightArrow {
+        left: 3em;
+    }
+    @keyframes forward {
+        from {
+            opacity: 1;
+            left: -6em;
+        }
+        to {
+            opacity: 0;
+            left: 0em;
+        }
+    }
+    @keyframes back {
+        from {
+            opacity: 1;
+            right: 1em;
+        }
+        to {
+            opacity: 0;
+            right: 6em;
+        }
+    }
+    @keyframes backwardAppear {
+        from {
+            opacity: 0;
+            right: 1em;
+        }
+        to {
+            opacity: 1;
+            right: -7em;
+        }
+    }
+    @keyframes forwardAppear {
+        from {
+            opacity: 0;
+            left: -1em;
+        }
+        to {
+            opacity: 1;
+            left: 7em;
+        }
+    }
+}
+@media screen and (min-width: 426px) and (max-width: 769px) {
+    #leftArrow {
+        left: 14em;
+    }
+    #rightArrow {
+        left: 4em;
+    }
+    @keyframes forward {
+        from {
+            opacity: 1;
+            left: -7.5em;
+        }
+        to {
+            opacity: 0;
+            left: 5em;
+        }
+    }
+    @keyframes back {
+        from {
+            opacity: 1;
+            right: 1em;
+        }
+        to {
+            opacity: 0;
+            right: 10em;
+        }
+    }
+    @keyframes backwardAppear {
+        from {
+            opacity: 0;
+            right: 1em;
+        }
+        to {
+            opacity: 1;
+            right: -14em;
+        }
+    }
+    @keyframes forwardAppear {
+        from {
+            opacity: 0;
+            left: -1em;
+        }
+        to {
+            opacity: 1;
+            left: 14em;
+        }
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1025px) {
+    #leftArrow {
+        left: 21em;
+    }
+    #rightArrow {
+        left: 5em;
+    }
+    @keyframes forward {
+        from {
+            opacity: 1;
+            left: -9.5em;
+        }
+        to {
+            opacity: 0;
+            left: 5em;
+        }
+    }
+    @keyframes back {
+        from {
+            opacity: 1;
+            right: 1em;
+        }
+        to {
+            opacity: 0;
+            right: 10em;
+        }
+    }
+    @keyframes backwardAppear {
+        from {
+            opacity: 0;
+            right: 1em;
+        }
+        to {
+            opacity: 1;
+            right: -20em;
+        }
+    }
+    @keyframes forwardAppear {
+        from {
+            opacity: 0;
+            left: -1em;
+        }
+        to {
+            opacity: 1;
+            left: 20em;
+        }
+    }
+}
+@media screen and (min-width: 1440px) and (max-width: 2560px) {
+    #leftArrow {
+        left: 28em;
+    }
+    #rightArrow {
+        left: 8em;
+    }
+    @keyframes forward {
+        from {
+            opacity: 1;
+            left: -12.5em;
+        }
+        to {
+            opacity: 0;
+            left: 25em;
+        }
+    }
+    @keyframes back {
+        from {
+            opacity: 1;
+            right: 12.5em;
+        }
+        to {
+            opacity: 0;
+            right: 28em;
+        }
+    }
+    @keyframes backwardAppear {
+        from {
+            opacity: 0;
+            right: 12.5em;
+        }
+        to {
+            opacity: 1;
+            right: -28em;
+        }
+    }
+    @keyframes forwardAppear {
+        from {
+            opacity: 0;
+            left: 0em;
+        }
+        to {
+            opacity: 1;
+            left: 28em;
+        }
+    }    
+}

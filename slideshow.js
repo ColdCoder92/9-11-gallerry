@@ -26,7 +26,7 @@ $(function() {
 
     function forward() {
         manual();
-        auto();
+        //auto();
         function manual() {
             $("#rightArrow").on("click", function() {
                 if (index != photos.length - 1){
@@ -45,7 +45,7 @@ $(function() {
                 assign();
             });
         }
-        function auto() {
+        /*function auto() {
             setInterval(function() {
                 if (index != photos.length - 1){
                     index++;  
@@ -61,7 +61,7 @@ $(function() {
                 }    
                 animationToggle();    
             }, 3000);
-        }
+        } */
     }
 
     function animationToggle() {
