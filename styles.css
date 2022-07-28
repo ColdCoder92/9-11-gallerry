@@ -1,3 +1,7 @@
+/* Core and Top Layouts */
+body {
+    text-size-adjust: 100%;
+}
 header {
     width: 100%;
 }
@@ -7,6 +11,20 @@ section, #content{
 #star {
     width: 5%;
 }
+@media screen and (max-width: 426px) {
+    #star {
+        width: 25%;
+    }
+    #bottomDivider {
+        font-size: 75%;
+    }
+}
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    #star {
+        width: 10%;
+    }
+}
+/* Slideshow Layout */
 .arrows {
     position: relative;
     z-index: 2;
@@ -25,14 +43,14 @@ section, #content{
 }
 #main {
     width: 17.75%;
-    animation: forward 1s ease infinite;
+    animation: forward 1s alternate infinite;
     animation-play-state: paused;
 }
 #offset {
-    animation: forwardAppear 1s ease infinite;
+    animation: forwardAppear 1s alternate infinite;
     animation-play-state: paused;
 }
-
+/* Slideshow Animations */
 @keyframes forward {
     from {
         opacity: 1;
@@ -73,20 +91,63 @@ section, #content{
         left: 12.5em;
     }
 }
+/* Image Styles */
 .logo {
     margin: 0.25em 0.5em;
 }
+#content {
+    width: 100%;
+}
+.payType {
+    margin: 0.25em 0em;
+}
 .photo {
-    width: 33%;
+    margin: 1em 0em;
     border-radius: 25%;
 }
+#mastercard {
+    width: 4em;
+}
+/* Calendar Styles */
 label {
     margin-right: 1em;
 }
 #date {
     margin-bottom: 1em;
 }
+.empty {
+    opacity: 0;
+}
 .ticket {
     text-align: center;
     margin: 1em 0em;
+}
+/* Cart Styles */
+#cart1, #cart2 {
+    background-color: black;
+    margin: 0;
+}
+#centerArea, #centerArea2 {
+    background-color: white;
+}
+.details {
+    float: right;
+}
+form h3 {
+    margin-top: 1em;
+}
+#emailInput {
+    width: 20%;
+}
+#input-cc {
+    width: 50%;
+}
+#input-cc-cvc, #input-cc-date {
+    width: 25%;
+}
+.buttonGroup {
+    margin: 1.5em;
+}
+.buttonGroup button {
+    margin: 1em;
 }

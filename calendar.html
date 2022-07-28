@@ -40,35 +40,35 @@
     </head>
     <body>
         <header style="background-color: var(--bs-gray); text-align: center;">
-            <img class="logo" src="images/twitterIcon.png" alt="Twitter Logo">
-            <img class="logo" src="images/tiktokIcon.png" alt="TikTok Logo">
-            <img class="logo" src="images/facebookIcon.png" alt="Facebook Logo">
-            <img class="logo" src="images/youtubeIcon.png" alt="Youtube Logo">
+            <img class="logo" src="images/icons/twitterIcon.png" alt="Twitter Logo">
+            <img class="logo" src="images/icons/tiktokIcon.png" alt="TikTok Logo">
+            <img class="logo" src="images/icons/facebookIcon.png" alt="Facebook Logo">
+            <img class="logo" src="images/icons/youtubeIcon.png" alt="Youtube Logo">
         </header>
         <header>
             <nav class="navbar">
                 <table class="nav">
-                    <tr class="nav-tabs">
-                        <td class="nav-item" style="width: 25%;">
+                    <tr id="bottomDivider" class="nav-tabs">
+                        <td class="nav-item" style="width: 15%;">
                             <a class="nav-link" href="index.html">
-                                <img id="star" src="images/star.png" alt="Star">
+                                <img id="star" src="images/icons/star.png" alt="Star">
                                 Gallery
                             </a>
                         </td>
-                        <td class="nav-item" align="right" style="width: 18%;"><a href="#about" class="nav-link">About</a></li>
-                        <td class="nav-item" style="width: 10%;"><a href="team.html" class="nav-link">People Involved</a></li>
-                        <td class="nav-item"><a href="calendar.html" class="nav-link">Calendar</a></li>
+                        <td class="nav-item" align="right" style="width: 10%;"><a href="index.html#about" class="nav-link">About</a></li>
+                        <td class="nav-item" align="center" style="width: 5%;"><a href="team.html" class="nav-link">People Involved</a></li>
+                        <td class="nav-item" style="width: 25%;"><a href="calendar.html" class="nav-link">Calendar</a></li>
                     </tr>
                 </table>
             </nav>
         </header>
-        <section>
+        <section id="calendar">
             <h1 align="center">Calendar</h1>
             <div class="container" style="text-align: center;">
                 <div class="row">
                     <div class="col">
-                        <label for="date">Go To:</label>
-                        <input type="date" id="date">
+                        <label for="dateInput">Go To:</label>
+                        <input type="date" id="dateInput">
                         <table class="table">
                             <tr class="align-content-center">
                                 <th><button id="prev">&larr;</button></th>
@@ -76,112 +76,266 @@
                                 <th><button id="next">&rarr;</button></th>
                             </tr>
                             <tr>
-                                <th class="week">Sunday</th>
-                                <th class="week">Monday</th>
-                                <th class="week">Tuesday</th>
-                                <th class="week">Wednesday</th>
-                                <th class="week">Thursday</th>
-                                <th class="week">Friday</th>
-                                <th class="week">Saturday</th>
-                            </tr>
-                            <tr class="extraWeeks">
-                                <td class="days"></td>
-                                <td class="days"></td>
-                                <td class="days"></td>
-                                <td class="days"></td>
-                                <td class="days"></td>
-                                <td class="days">1</td>
-                                <td class="days">2</td>
+                                <th>Sunday</th>
+                                <th>Monday</th>
+                                <th>Tuesday</th>
+                                <th>Wednesday</th>
+                                <th>Thursday</th>
+                                <th>Friday</th>
+                                <th>Saturday</th>
                             </tr>
                             <tr>
-                                <td class="days">3</td>
-                                <td class="days">4</td>
-                                <td class="days">5</td>
-                                <td class="days">6</td>
-                                <td class="days">7</td>
-                                <td class="days">8</td>
-                                <td class="days">9</td>
+                                <td class="days sunday"></td>
+                                <td class="days">
+                                    <button class="empty btn btn-dark"></button>
+                                </td>
+                                <td class="days">
+                                    <button class="empty btn btn-dark"></button>
+                                </td>
+                                <td class="days">
+                                    <button class="empty btn btn-dark"></button>
+                                </td>
+                                <td class="days">
+                                    <button class="empty btn btn-dark"></button>
+                                </td>
+                                <td class="days">
+                                    <button class="btn btn-dark">1 <br>•</button>
+                                </td>
+                                <td class="days saturday">2</td>
                             </tr>
                             <tr>
-                                <td class="days">10</td>
-                                <td class="days">11</td>
-                                <td class="days">12</td>
-                                <td class="days">13</td>
-                                <td class="days">14</td>
-                                <td class="days">15</td>
-                                <td class="days">16</td>
+                                <td class="days sunday">3</td>
+                                <td class="days">
+                                    <button class="btn btn-dark">4<br>•</button>
+                                </td>
+                                <td class="days">
+                                    <button class="btn btn-dark">5<br>•</button>
+                                </td>
+                                <td class="days">
+                                    <button class="btn btn-dark">6<br>•</button>
+                                </td>
+                                <td class="days">
+                                    <button class="btn btn-dark">7<br>•</button>
+                                </td>
+                                <td class="days">
+                                    <button class="btn btn-dark">8<br>•</button>
+                                </td>
+                                <td class="days saturday">9</td>
                             </tr>
                             <tr>
-                                <td class="days">17</td>
-                                <td class="days">18</td>
-                                <td class="days">19</td>
-                                <td class="days">20</td>
-                                <td class="days">21</td>
-                                <td class="days">22</td>
-                                <td class="days">23</td>
+                                <td class="days sunday">10</td>
+                                <td class="days">
+                                    <button class="btn btn-dark">11<br>•</button>
+                                </td>
+                                <td class="days">
+                                    <button class="btn btn-dark">12<br>•</button>
+                                </td>
+                                <td class="days">
+                                    <button class="btn btn-dark">13<br>•</button>
+                                </td>
+                                <td class="days">
+                                    <button class="btn btn-dark">14<br>•</button>
+                                </td>
+                                <td class="days">
+                                    <button class="btn btn-dark">15<br>•</button>
+                                </td>
+                                <td class="days saturday">16</td>
                             </tr>
                             <tr>
-                                <td class="days">24</td>
-                                <td class="days">25</td>
-                                <td class="days">26</td>
-                                <td class="days">27</td>
-                                <td class="days">28</td>
-                                <td class="days">29</td>
-                                <td class="days">30</td>
+                                <td class="days sunday">17</td>
+                                <td class="days">
+                                    <button class="btn btn-dark">18<br>•</button>
+                                </td>
+                                <td class="days">
+                                    <button class="btn btn-dark">19<br>•</button>
+                                </td>
+                                <td class="days">
+                                    <button class="btn btn-dark">20<br>•</button>
+                                </td>
+                                <td class="days">
+                                    <button class="btn btn-dark">21<br>•</button>
+                                </td>
+                                <td class="days">
+                                    <button class="btn btn-dark">22<br>•</button>
+                                </td>
+                                <td class="days saturday">23</td>
                             </tr>
-                            <tr class="extraWeeks">
-                                <td class="days">31</td>
-                                <td class="days"></td>
-                                <td class="days"></td>
-                                <td class="days"></td>
-                                <td class="days"></td>
-                                <td class="days"></td>
-                                <td class="days"></td>
+                            <tr>
+                                <td class="days sunday">24</td>
+                                <td class="days">
+                                    <button class="btn btn-dark">25<br>•</button>
+                                </td>
+                                <td class="days">
+                                    <button class="btn btn-dark">26<br>•</button>
+                                </td>
+                                <td class="days">
+                                    <button class="btn btn-dark">27<br>•</button>
+                                </td>
+                                <td class="days">
+                                    <button class="btn btn-dark">28<br>•</button>
+                                </td>
+                                <td class="days">
+                                    <button class="btn btn-dark">29<br>•</button>
+                                </td>
+                                <td class="days saturday">30</td>
+                            </tr>
+                            <tr>
+                                <td class="days sunday">31</td>
+                                <td class="days">
+                                    <button class="empty btn btn-dark"></button>
+                                </td>
+                                <td class="days">
+                                    <button class="empty btn btn-dark"></button>
+                                </td>
+                                <td class="days">
+                                    <button class="empty btn btn-dark"></button>
+                                </td>
+                                <td class="days">
+                                    <button class="empty btn btn-dark"></button>
+                                </td>
+                                <td class="days">
+                                    <button class="empty btn btn-dark"></button>
+                                </td>
+                                <td class="days saturday"></td>
                             </tr>
                         </table>
                         <div id="buttonTimes"></div>
                         <div  class="ticket" style="text-align: center;">
                             <label for="ticket">Standard</label>
                             <label for="ticket">$15.00</label>
-                            <input type="number" id="ticket">
+                            <input type="number" id="ticket1" placeholder="0">
                         </div>
                         <div class="ticket" style="text-align: center;">
                             <label for="ticket2">Discount</label>
-                            <label for="ticket2">$X.XX</label>
-                            <input type="number" id="ticket2">
+                            <label for="ticket2">$10.00</label>
+                            <input type="number" id="ticket2" placeholder="0">
                         </div>
                         <div class="ticket" style="text-align: center;">
                             <label for="ticket3">Premium</label>
-                            <label for="ticket3">$X.XX</label>
-                            <input type="number" id="ticket3">
+                            <label for="ticket3">$20.00</label>
+                            <input type="number" id="ticket3" placeholder="0">
                         </div>
-                        <button>Buy!</button>
+                        <a id="cartBtn" class="btn btn-dark">Add to Cart!</a>
                     </div> <!--End of Column 2-->
                 </div> <!--End of Row-->
             </div> <!--End of Container-->
+        </section>
+        <section id="cart1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-fluid"></div>
+                    <div id="centerArea" class="col-fluid">
+                        <h1 align="center">Cart</h1>
+                        <img class="mx-auto d-block" src="images/icons/progressIcon.png" alt="In Progress">
+                        <h2 style="margin: 1em 0em;">9/11 Gallery Expo</h2>
+                        <h3>Ticket Details:</h3>
+                        <div id="dateCart">
+                            <p></p>
+                            <p></p>
+                        </div>
+                        <div id="ticketCart">
+                            <p>Standard (<span class="tktCount">0</span>): <span class="priceCal details">$<span class="tktPrice">0.00</span></span></p>
+                            <p>Discount (<span class="tktCount">0</span>): <span class="priceCal details">$<span class="tktPrice">0.00</span></span></p>
+                            <p>Premium  (<span class="tktCount">0</span>): <span class="priceCal details">$<span class="tktPrice">0.00</span></span></p>
+                        </div>
+                        <div>
+                            <p>SubTotal: <span class="details">$<span id="subtotal">0.00</span></span></p>
+                            <p>Tax: <span class="details">$<span id="tax">0.00</span></span></p>
+                            <p>Total: <span class="details">$<span class="total">0.00</span></span></p>
+                        </div>
+                        <form onsubmit="return false;">
+                            <h3>Billing Details</h3>
+                            <div class="input-group">
+                                <input id="nameInput" placeholder="Name" name="name" required>
+                                <input type="email" id="emailInput" placeholder="Email Address" name="email" required>    
+                            </div>
+                            <h3>Payment Details</h3>
+                            <div class="input-group-text">
+                                <input id="input-cc" placeholder="Enter Card Number" name="ccNumber" required>           
+                                <input id="input-cc-date" placeholder="Exp: mm/yy" name="ccExpDate" required>
+                                <input id="input-cc-cvc" placeholder="CVC" name="ccCVC" required>    
+                            </div>
+                            <div>
+                                <img id="visa" src="images/icons/visaIcon.png" class="payType">
+                                <img id="mastercard" src="images/icons/mastercardIcon.png" class="payType">
+                                <img id="americanexpress" src="images/icons/americanExpressIcon.png" class="payType">
+                                <img id="discover" src="images/icons/discoverIcon.png" class="payType">    
+                            </div> <!--End of Payment Type Group-->
+                            <div class="buttonGroup">
+                                <button id="calendarBack1" class="btn btn-dark">Back to Calendar</button>            
+                                <button id="purchase" class="btn btn-dark">Purchase</button>
+                            </div> <!--End of Button Group-->    
+                        </form>
+                    </div> <!--End of Center Area-->
+                    <div class="col-fluid"></div>
+                </div>
+            </div>
+        </section>
+        <section id="cart2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-fluid"></div>
+                    <div id="centerArea2" class="col-fluid">
+                        <h1 align="center">Cart</h1>
+                        <img class="mx-auto d-block" src="images/icons/checkmarkIcon.png" alt="Checkmark Done">
+                        <h2 align="center">Thank you for your purchase!</h2>
+                        <p align="center">Your order details will arrive to your email shortly.</p>
+                        <table class="table table-bordered">
+                            <tr>
+                                <th>Purchase Details:</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Ticket(s) for 9/11 Expo <br> 
+                                    <span class="tktToggle">Standard: <span class="details tktReceipt"></span><br></span>
+                                    <span class="tktToggle">Discount: <span class="details tktReceipt"></span><br></span>
+                                    <span class="tktToggle">Premium: <span class="details tktReceipt"></span><br></span><br>
+                                    Total: <span class="details">$<span class="total">0.00</span></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Billing Details:</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Name:   <span id="name" class="details"></span><br>
+                                    Email Address:  <span id="email" class="details"></span><br>
+                                    Payment Type:   <span class="details"><img class="payType">ending with <span id="cc-end"></span></span>
+                                </td>
+                            </tr>
+                        </table>
+                        <div class="buttonGroup">
+                            <button id="calendarBack2" class="btn btn-dark">Back to Calendar</button>            
+                        </div>
+                    </div>
+                    <div class="col-fluid"></div>
+                </div>
+            </div>
         </section>
         <footer style="background-color: var(--bs-gray);">
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="team.html">People Involved</a></li>
-                            <li><a href="calendar.html">Calendar</a></li>
+                        <ul class="nav">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="team.html">People Involved</a></li>
+                            <li class="nav-item"><a class="nav-link" href="calendar.html">Calendar</a></li>
                         </ul>
                     </div> <!--End of Column 1-->
                     <div class="col-6">
                         <p align="center">©️2022 Group LLC</p>
                     </div>  <!--End of Column 2-->
                     <div class="col">
-                        <img class="logo" src="images/twitterIcon.png" alt="Twitter Logo">
-                        <img class="logo" src="images/tiktokIcon.png" alt="TikTok Logo">
-                        <img class="logo" src="images/facebookIcon.png" alt="Facebook Logo">
-                        <img class="logo" src="images/youtubeIcon.png" alt="Youtube Logo">
+                        <img class="logo" src="images/icons/twitterIcon.png" alt="Twitter Logo">
+                        <img class="logo" src="images/icons/tiktokIcon.png" alt="TikTok Logo">
+                        <img class="logo" src="images/icons/facebookIcon.png" alt="Facebook Logo">
+                        <img class="logo" src="images/icons/youtubeIcon.png" alt="Youtube Logo">
                     </div>  <!--End of Column 3-->
                 </div> <!--End of Row-->
             </div>  <!--End of Container-->
         </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/cleave.js/1.0.2/cleave.min.js" integrity="sha512-SvgzybymTn9KvnNGu0HxXiGoNeOi0TTK7viiG0EGn2Qbeu/NFi3JdWrJs2JHiGA1Lph+dxiDv5F9gDlcgBzjfA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
         <script src="calendar.js"></script>
         <!--Bootstrap JS Files-->
         <script src="bootstrap-5.0.2-dist\js\bootstrap.js"></script>
