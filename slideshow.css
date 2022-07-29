@@ -19,9 +19,9 @@
     width: 45%;
 }
 /*Animations & Responsive Layouts*/
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 321px) {
     welcome {
-        margin: 0.5em;
+        margin: 0em;
     }
     #leftArrow, #rightArrow {
         left: 3em;
@@ -67,7 +67,7 @@
         }
     }
 }
-@media screen and (min-width: 320px) and (max-width: 376px) {
+@media screen and (min-width: 321px) and (max-width: 376px) {
     #leftArrow {
         left: 4em;
     }

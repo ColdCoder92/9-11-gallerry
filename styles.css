@@ -2,8 +2,8 @@
 body {
     text-size-adjust: 100%;
 }
-header {
-    width: 100%;
+header, footer {
+    width: 101%;
 }
 section, #content{
     margin: 1em 0em;
@@ -21,6 +21,12 @@ section, #content{
         width: 25%;
     }
     #bottomDivider {
+        font-size: 75%;
+    }
+    #calendar table {
+        font-size: 50%;
+    }
+    .days button, #prev, #next {
         font-size: 75%;
     }
 }
@@ -50,8 +56,9 @@ section, #content{
 label {
     margin-right: 1em;
 }
-#date {
-    margin-bottom: 1em;
+#calendar table {
+    margin: 1em 0em;
+    text-align: center;
 }
 .empty {
     opacity: 0;
@@ -59,6 +66,9 @@ label {
 .ticket {
     text-align: center;
     margin: 1em 0em;
+}
+.ticket input {
+    width: 10%;
 }
 /* Cart Styles */
 #cart1, #cart2 {

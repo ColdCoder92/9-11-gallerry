@@ -186,7 +186,10 @@ $(function() {
         for (let h = 8; h < 21; h++){
             let button = $("<button></button>");
             button.addClass("btn btn-light");
-            button.css("margin", "0em 1em");
+            button.css({
+                "margin": "1em",
+                "width": "5em"
+            });
             if (h >= 12){
                 if (h == 12){
                     button.text(h + ":00 PM");
