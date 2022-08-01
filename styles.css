@@ -8,6 +8,12 @@ header, footer {
 section, #content{
     margin: 1em 0em;
 }
+header a {
+    color: black !important;
+}
+footer, footer a {
+    color: whitesmoke !important;
+}
 #star {
     width: 5%;
 }
